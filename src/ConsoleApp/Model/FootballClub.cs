@@ -1,10 +1,8 @@
-﻿using System;
-
-namespace ConsoleApp.Model
+﻿namespace ConsoleApp.Model
 {
     internal class FootballClub
     {
-        public Guid Id { get; init; } = Guid.NewGuid();
+        public string Id => Name.ToLower();
 
         public string Name { get; init; } = string.Empty;
 
